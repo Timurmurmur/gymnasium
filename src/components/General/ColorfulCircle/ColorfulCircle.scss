@@ -1,0 +1,19 @@
+.colorful-circle {
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    width: 2.05em;
+    height: 2.05em;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}

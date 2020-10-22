@@ -1,0 +1,118 @@
+.cabinet-header__logo {
+    background-color: #fff;
+    border-bottom: 1px solid #EAEAEC;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 300;
+}
+
+.logo-group {
+    min-width: 250px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+
+    &__icon {
+        margin-right: 8px;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    &__name {
+        height: 2.5rem;        
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabinet-header__logo {
+      position: relative;
+      padding: 35px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .cabinet-header__logo .icon-circle-arrow {
+        position: absolute;
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+}
+
+
+.opener {
+    display: block;
+    width: 35px;
+    height: 38px;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border-radius: 3px;
+    margin-left: 20px;
+    z-index: 400;
+}
+
+@media (min-width: 768px) {
+    .opener {
+        display: none;
+    }
+}
+
+.opener:hover {
+    opacity: .9;
+}
+
+.show .opener span {
+    opacity: 0;
+}
+
+.show .opener span, .show .opener:before, .show .opener:after {
+    background: #007EEC;
+}
+
+.show .opener:before, .show .opener:after {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+  
+.show .opener:after {
+    width: 100%;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+}
+  
+.opener span, .opener:before, .opener:after {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    margin-top: -1.5px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+    background: #007EEC;
+}
+  
+.opener:before, .opener:after {
+    content: '';
+    top: 0;
+}
+  
+.opener:after {
+    left: auto;
+    right: 0;
+    top: 50%;
+    width: 100%;
+}
+  

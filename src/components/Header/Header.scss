@@ -1,0 +1,103 @@
+.header {
+    &.show {
+        & .cabinet-header__footer {
+            &-link {
+                & i {
+                    display: none;;
+                }
+            }
+        }
+    }
+    &.hidden {
+        max-width: 110px!important;
+        & .logo {
+            & .logo-group__name {
+                display: none;
+            }
+            
+        }
+        & .menu-list__link span {
+            display: none;
+        }
+        & .cabinet-header__user-opener {
+            display: none;
+        }
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    .header {
+        &.hidden {
+            & .cabinet-header__footer {
+                width: 110px;
+                &-link {
+                    & span {
+                        display: none;
+                    }
+                    & i {
+                        display: block;;
+                    }
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .show .cabinet-header__tab-menu {
+        opacity: 1;
+    }
+    .fade:not(.show) {
+        opacity: 1;
+    }
+    .header {
+        &.hidden {
+            .pupil-nav__container.nav.nav-justified {
+                display: none;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .header {
+        &.hidden {
+            & .logo {
+                & .logo-group__name {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .show .cabinet-header__tab-menu  {
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 1;
+        height: calc(100vh - 85px);
+        box-sizing: border-box;
+        overflow: scroll;
+    }
+
+    .tab-pane {
+        z-index: 1000;
+        background-color: #fff;
+        & .pupil-nav__container.nav {
+            height: unset;
+        }
+    }
+    
+    .header-tab {
+        & .tab-pane {
+            padding: 20px;
+        }
+        & .cabinet-header__user-container .cabinet-header__user.card-header {
+            padding-top: 20px;
+        }
+    }
+
+
+}

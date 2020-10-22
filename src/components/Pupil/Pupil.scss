@@ -1,0 +1,111 @@
+.cabinet-header {
+    &__tab-pupil-fixed {
+        margin-bottom: 25px;
+    }
+
+    &__tab-pupil-wrapper {
+        padding: 0 15px !important;
+    }
+
+    &__pupil {
+        margin: 0 auto;
+        padding-top: 35px;
+        max-width: 300px;
+        text-align: center;
+
+        &-photo {
+            border-radius: 50%;
+            width: 154px;
+            height: 154px;
+            margin-bottom: 25px;
+        }
+
+        &-options-list {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+
+            &-item {
+                margin-bottom: 10px;
+
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.info-list {
+    max-width: 420px;
+    color: #adb5bd;
+
+    &__item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+
+        &:nth-child(2) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__name {
+        color: #6c757d;
+        font-weight: 500;
+        -webkit-flex-basis: 30%;
+        -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+        padding-right: 15px;
+    }
+
+    &__value {
+        -webkit-flex-basis: 70%;
+        -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    }
+}
+
+.info-list__item + .info-list__item {
+    margin-top: 15px;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1500px) {
+    .home .col-2 {
+        max-width: 20%;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .cabinet-header {
+        &__tab-pupil-fixed {
+            margin-bottom: 0;
+        }
+
+        &__tab-pupil-wrapper {
+            padding: 0 20px !important;
+        }
+    }
+
+    .home .cabinet-header {
+        &__tab-pupil-fixed {
+            width: 100%;
+            max-width: 360px;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            opacity: 1 !important;
+            display: block !important;
+            overflow-y: auto;
+        }
+    }
+}

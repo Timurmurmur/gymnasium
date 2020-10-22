@@ -1,0 +1,20 @@
+.rating-table {
+    &__form {
+        width: 100%;
+        text-align: right;
+
+        .form-group {
+            max-width: 100%;
+
+            textarea {
+                min-height: 100px;
+                font-size: 14px;
+            }
+        }
+
+        &-btn {
+            width: 35px;
+            min-width: 35px;
+        }
+    }
+}

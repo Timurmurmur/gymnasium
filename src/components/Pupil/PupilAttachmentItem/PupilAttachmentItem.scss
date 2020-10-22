@@ -1,0 +1,47 @@
+.attachment-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.doc-icon {
+    position: relative;
+    width: 23px;
+    height: 27px;
+    min-width: 23px;
+    min-height: 27px;
+    margin-right: 10px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 23px;
+        height: 27px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../../../assets/img/txt.svg");
+    }
+
+    &--pdf::after {
+        background-image: url("../../../assets/img/pdf.svg");
+    }
+
+    &--docx::after {
+        background-image: url("../../../assets/img/docx.svg");
+    }
+
+    &--txt::after {
+        background-image: url("../../../assets/img/txt.svg");
+    }
+}

@@ -1,0 +1,28 @@
+.performance__table {
+    overflow: hidden;
+    width: 100%;
+}
+
+.performance__loading {
+    width: 90%;
+    & .react-loading-skeleton {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .performance__table-wrapper {
+      height: -webkit-calc(100% + 1px);
+      height: calc(100% + 1px);
+      -webkit-transform: translateY(1px);
+          -ms-transform: translateY(1px);
+              transform: translateY(1px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .performance__table {
+        padding: 0 15px;
+    }
+}

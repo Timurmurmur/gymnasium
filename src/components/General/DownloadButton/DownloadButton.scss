@@ -1,0 +1,12 @@
+
+.icon--green {
+    color: #00AF01;
+
+    &:hover, &:active, &:focus {
+        color: #00AF01;
+    }
+
+    &:hover {
+        border-color: #00AF01;
+    }
+}

@@ -1,0 +1,34 @@
+
+.overdue-card--pl {
+    min-height: auto !important;
+}
+
+.overdue-card--pl .overdue-card__title {
+    margin-bottom: 15px;
+}
+
+.overdue-card--pl .overdue-card__text {
+    width: 200px;
+    margin-bottom: 15px;
+    background-color: #F4F4F4;
+}
+
+.overdue-card--pl .overdue-card__extra-text {
+    width: 140px;
+    margin-bottom: 10px;
+    background-color: #FBFBFB;
+}
+
+.overdue-card--pl .overdue-card__extra-text-2 {
+    width: 110px;
+    background-color: #FBFBFB;
+}
+
+.overdue-card--pl .overdue-card__footer {
+    line-height: 0;
+}
+
+.overdue-card--pl .overdue-card__footer span {
+    display: inline-block;
+    width: 83px;
+}

@@ -1,0 +1,19 @@
+
+.home-empty-data {
+    text-align: center;
+    margin: 40px auto 0;
+}
+
+@media (min-width: 768px) {
+    .home-empty-data {
+    margin-top: 65px;
+    }
+}
+
+.home-empty-data__img {
+    width: -webkit-calc(13.28125vw + 6.71875rem);
+    width: calc(13.28125vw + 6.71875rem);
+    max-width: 320px;
+    margin-bottom: 35px;
+}
+  

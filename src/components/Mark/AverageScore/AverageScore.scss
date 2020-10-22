@@ -1,0 +1,50 @@
+.rating__mark {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    font-size: 20px;
+    margin-right: 20px;
+
+    &-title {
+        font-weight: 300;
+        margin-right: 10px;
+        display: none;
+    }
+
+    &-value {
+        font-weight: 500;
+        color: #FF7A00;
+        font-size: 20px;
+    }
+}
+
+.cabinet-content__loading {
+    & .rating__mark-title {
+        height: 20px;
+        width: 100px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 414px) {
+    .rating__mark {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 992px) {
+    .rating__mark {
+        &-title {
+            display: block;
+        }
+
+        &-value {
+            font-size: 25px;
+        }
+    }
+}

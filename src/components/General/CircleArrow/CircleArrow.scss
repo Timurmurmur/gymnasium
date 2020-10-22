@@ -1,0 +1,44 @@
+.icon-circle-arrow {
+    cursor: pointer;
+    font-size: 14px;
+    width: 2.5714em;
+    height: 2.5714em;
+    min-width: 2.5714em;
+    min-height: 2.5714em;
+    border-radius: 50%;
+    background-color: #fff;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+    color: #ced4da;
+    -webkit-box-shadow: 0 0 9px rgba(73, 80, 87, 0.1);
+            box-shadow: 0 0 9px rgba(73, 80, 87, 0.1);
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
+
+    &:hover, &:active, &:focus {
+        color: #ced4da;
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:hover {
+        color: #007EEC;
+    }
+
+    &:active {
+        -webkit-box-shadow: 0 0 9px rgba(73, 80, 87, 0.2);
+        box-shadow: 0 0 9px rgba(73, 80, 87, 0.2);
+    }
+}

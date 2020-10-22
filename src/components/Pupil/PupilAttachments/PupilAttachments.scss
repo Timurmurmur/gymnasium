@@ -1,0 +1,8 @@
+.cabinet-header__doc-wrapper {
+    width: 100%;
+    overflow-y: auto;
+}
+
+.cabinet-header__attachment-list li + li {
+    margin-top: 20px;
+}

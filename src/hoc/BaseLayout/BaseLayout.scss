@@ -1,0 +1,15 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.cabinet .wrapper {
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .cabinet .wrapper {
+        min-height: auto;
+        height: 100vh;
+    }
+}

@@ -1,0 +1,46 @@
+.schedule-table__list-item {
+    background-color: #fff;
+    padding: 10px;
+}
+
+.current-subj {
+    background-color: #007EEC;
+}
+
+.schedule-table__subj{
+    &-time {
+        display: inline-block;
+        font-size: 15px;
+        color: #6c757d;
+        font-weight: 300;
+        margin-bottom: 20px;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+    }
+
+    &-name {
+        display: block;
+        font-size: 15px;
+        color: #495057;
+        font-weight: 500;
+        -webkit-transition: color 0.3s ease-in-out;
+        -o-transition: color 0.3s ease-in-out;
+        transition: color 0.3s ease-in-out;
+    }
+}
+
+.current-day .schedule-table__subj-time,
+.current-day .schedule-table__subj-name {
+    color: #adb5bd;
+}
+
+.current-subj .schedule-table__subj-time,
+.current-subj .schedule-table__subj-name {
+    color: #fff;
+}
+
+.expired-subj .schedule-table__subj-time,
+.expired-subj .schedule-table__subj-name {
+    color: #808A9E;
+}

@@ -1,0 +1,44 @@
+.schedule__loading header {
+    border-bottom: none;
+}
+
+.schedule-table--pl {
+    border-bottom: 1px solid #EAEAEC;
+}
+
+.schedule-table--pl .schedule-table__header,
+.schedule-table--pl .schedule-table__list-item:not(:last-child) {
+    border-bottom: 1px solid #EAEAEC;
+
+}
+
+.schedule-table--pl .schedule-table__header-date {
+    width: 75px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 70px;
+    background-color: #FBFBFB;
+    margin-bottom: 8px;
+}
+
+.schedule-table--pl .schedule-table__header-title {
+    width: 125px;
+    height: 11px;
+    border-radius: 70px;
+    background-color: #EDEDED;
+}
+
+.schedule-table--pl .schedule-table__subj-time {
+    width: 75px;
+    height: 14px;
+    border-radius: 70px;
+    background-color: #FBFBFB;
+}
+
+.schedule-table--pl .schedule-table__subj-name {
+    width: 66px;
+    height: 9px;
+    border-radius: 70px;
+    background-color: #EDEDED;
+}
+  

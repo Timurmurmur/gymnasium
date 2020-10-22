@@ -1,0 +1,27 @@
+.user {
+    &-card {
+
+        &__add {
+            &-info {
+                margin-top: 5px;
+                font-size: 14px;
+                color: #ced4da;
+
+                &:after {
+                    clear: both;
+                    content: '';
+                    display: table;
+                }
+            }
+        }
+
+        &__grade {
+
+        }
+
+        &__rating {
+            color: #FF7A00;
+            white-space: nowrap;
+        }
+    }
+}

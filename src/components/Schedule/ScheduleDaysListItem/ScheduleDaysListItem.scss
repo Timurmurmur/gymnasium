@@ -1,0 +1,32 @@
+.schedule__table-list-item {
+    margin-right: 20px;
+}
+
+.schedule-table {
+    position: relative;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+    min-width: 180px;
+    z-index: 2;
+
+    &__header {
+        text-align: center;
+        padding: 20px 25px;
+        border-bottom: 1px solid #131336;
+
+        &-date {
+            font-size: 15px;
+            color: #adb5bd;
+        }
+
+        &-title {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+.current-day {
+    border-color: #007EEC;
+}
+

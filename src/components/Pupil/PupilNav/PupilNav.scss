@@ -1,0 +1,21 @@
+.pupil-nav {
+    &__selected a {
+        border-bottom: 1px solid var(--blue)!important;
+        color: var(--blue)!important;
+    }
+    &__container {
+        height: 60px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__wrapper {
+        border-bottom: 1px solid rgba(162, 162, 195, 0.2);
+        & a {
+            font-size: 1.2rem;
+            color: rgba(162, 162, 195, 0.2)
+            
+        }
+    }
+    
+}

@@ -1,0 +1,12 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+    .cabinet-header__menu-list {
+      margin-left: -10px!important;
+      margin-top: 38px!important;
+    }
+}

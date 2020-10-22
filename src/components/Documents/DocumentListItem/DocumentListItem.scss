@@ -1,0 +1,125 @@
+.document-list {
+    overflow-x: auto;
+
+    li {
+        border: 0;
+        border-bottom: 1px solid #EAEAEC;
+    }
+
+    &__img {
+        img {
+            min-width: 40px;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        width: 60%;
+    }
+
+    &__type {
+        min-width: 73px;
+
+        span {
+            width: 100%;
+            text-align: center;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 6px 15px;
+            border-radius: 62px;
+        }
+    }
+
+    &__size {
+        min-width: 80px;
+        text-transform: uppercase;
+        color: #adb5bd;
+    }
+
+    &__status {
+        color: #adb5bd;
+        font-size: 12px;
+    }
+
+    &__ico {
+        margin-left: auto !important;
+    }
+    &--pl {
+
+        & .list-group-item {
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+        }
+        
+        & .list-group-item > div {
+            margin: 0 !important;
+        }
+        
+        & .document-list__img,
+        & .document-list__ico {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                    flex-shrink: 0;
+            background-color: #F2F2F2;
+        }
+        
+        & .document-list__text,
+        & .document-list__type,
+        & .document-list__size,
+        & .document-list__status {
+            height: 16px;
+            border-radius: 70px;
+            background-color: #FBFBFB;
+            min-width: auto;
+        }
+        
+        & .document-list__text {
+            -webkit-flex-basis: 25%;
+                -ms-flex-preferred-size: 25%;
+                    flex-basis: 25%;
+        }
+        
+        & .document-list__type {
+            width: 60px;
+        }
+        
+        & .document-list__size {
+            width: 50px;
+        }
+        
+        & .document-list__status {
+            -webkit-flex-basis: 35%;
+                -ms-flex-preferred-size: 35%;
+                    flex-basis: 35%;
+        }
+    }
+}
+
+.document-list li > div:not(:last-child) {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .document-list li > div:not(:last-child) {
+        margin-right: 15px;
+    }
+
+    .document-list__text {
+        min-width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .document-list__status {
+        font-size: 16px;
+    }
+}

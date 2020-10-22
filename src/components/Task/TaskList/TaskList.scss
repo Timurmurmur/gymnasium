@@ -1,0 +1,24 @@
+
+.task-card--pl {
+    width: 265px !important;
+    min-height: auto;
+}
+.task-card--pl .task-card__title {
+    margin-bottom: 16px;
+}
+
+.task-card--pl .task-card__text {
+    width: 200px;
+    margin-bottom: 18px;
+}
+
+.task-card--pl .task-card__inner {
+    border: 0;
+    margin-top: 0;
+}
+
+.task-card--pl .task-card__date {
+    width: 83px;
+    padding: 0;
+    background-color: #F4F4F4 !important;
+}

@@ -1,0 +1,31 @@
+.event {
+    font-size: 14px;
+
+    &__title {
+        color: #007EEC;
+        font-weight: 500;
+    }
+
+    &__body {
+        color: #adb5bd;
+    }
+
+    &__time {
+        font-size: inherit;
+        color: #007EEC;
+        margin-left: 5px;
+        font-weight: 500;
+    }
+    &__loading {
+        & .event__title .react-loading-skeleton{
+            width: 10rem;
+        }
+        & .event__body {
+            display: flex;
+            justify-content: space-between;
+            & .react-loading-skeleton{
+                width: 3rem;
+            }
+        } 
+    }
+}

@@ -1,0 +1,23 @@
+.document-list--search .document-list__size,
+.document-list--search .document-list__type,
+.document-list--search .document-list__status {
+    display: none;
+}
+
+.right-sidebar__list {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+  
+@media (min-width: 768px) {
+    .document-list--search .document-list__size,
+    .document-list--search .document-list__type,
+    .document-list--search .document-list__status {
+        display: block;
+    }
+
+    .right-sidebar__list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

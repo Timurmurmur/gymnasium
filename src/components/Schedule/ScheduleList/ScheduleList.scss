@@ -1,0 +1,63 @@
+.dashboard__schedule{
+
+    &-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+    &--loading {
+        & .schedule-card--pl {
+            width: 100%;
+            max-width: 370px;
+            min-height: auto;
+        }
+        
+        & .schedule-card--pl .schedule-card__title {
+            margin-bottom: 15px !important;
+        }
+        
+        & .schedule-card--pl .schedule-card__time {
+            margin-right: 30px;
+            -webkit-flex-shrink: 0;
+                -ms-flex-negative: 0;
+                    flex-shrink: 0;
+        }
+        
+        & .schedule-card--pl .schedule-card__text {
+            width: 100%;
+            max-width: 195px;
+            margin-bottom: 10px;
+        }
+        
+        & .schedule-card--pl .schedule-card__footer {
+            width: 100%;
+            max-width: 110px;
+            background-color: #f4f4f4!important;
+        }
+        
+    }
+}
+
+@media (min-width: 1440px) {
+    .dashboard__schedule{
+        &-wrapper {
+            -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+        }
+    }
+}
+  
+  @media (min-width: 1440px) {
+    .dashboard__schedule{
+        &-wrapper {
+            -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+        }
+    }
+}

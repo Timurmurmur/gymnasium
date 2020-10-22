@@ -1,0 +1,64 @@
+.dashboard__loading {
+    & .grade-card--pl .grade-card__grade {
+        width: 76%;
+    }
+    
+    & .grade-card--pl .grade-card__title {
+        margin-bottom: 10px;
+    }
+    
+    & .grade-card--pl .grade-card__text {
+        width: 84%;
+    }
+    
+    & .grade-card--pl .grade-card__footer {
+        padding-right: 15px;
+    }
+    
+    
+    & .card-pl {
+        font-size: 12px;
+        border: 1px solid #EDEDED;
+        border-radius: 3px;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    
+    & .card-pl__title, .card-pl__text, .card-pl__footer {
+        border-radius: 70px;
+    }
+    
+    & .card-pl__title {
+        width: 130px;
+        height: 16px;
+        background-color: #EDEDED;
+    }
+    
+    & .card-pl__text {
+        height: 10px;
+        background-color: #FBFBFB;
+    }
+    
+    & .card-pl__footer {
+        height: 8px;
+        background-color: #F4F4F4 !important;
+    }
+    
+    & .card-pl__btn {
+        width: 108px;
+        height: 30px;
+        background-color: #EDEDED !important;
+        border-radius: 3px;
+    }
+    
+    & .card-pl__square {
+        width: 105px;
+        height: 84.5px;
+        background-color: #EDEDED;
+        border-radius: 10px;
+    }
+
+}
+
+
+  

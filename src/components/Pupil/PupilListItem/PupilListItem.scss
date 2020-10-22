@@ -1,0 +1,85 @@
+.user {
+    &-card {
+        position: relative;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        color: #6c757d;
+        width: 100%;
+        -webkit-transition: background-color 0.3s ease-in-out;
+        -o-transition: background-color 0.3s ease-in-out;
+        transition: background-color 0.3s ease-in-out;
+
+        &:not(.user-card--selected):hover {
+            background: #f8f9fa;
+        }
+
+        &:not(.user-card--selected):hover .user-card__select {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition-delay: 0s;
+                 -o-transition-delay: 0s;
+                    transition-delay: 0s;
+        }
+
+        &__select {
+            position: absolute;
+            top: 4px;
+            right: 10px;
+            font-size: 12px;
+            color: #6c757d;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: opacity 0.3s linear,
+            visibility 0s linear 0.3s;
+            -o-transition: opacity 0.3s linear,
+            visibility 0s linear 0.3s;
+            transition: opacity 0.3s linear,
+            visibility 0s linear 0.3s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__photo {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        &__title {
+            font-size: 15px;
+            font-weight: 500;
+            color: #343a40;
+        }
+    }
+}
+
+.cabinet-header--min .cabinet-header .cabinet-header__media-body {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .user{
+        &-card {
+            max-width: 290px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .user {
+        &-card {
+            &:not(.user-card--selected) .user-card__select {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transition-delay: 0s;
+                     -o-transition-delay: 0s;
+                        transition-delay: 0s;
+            }
+        }
+    }
+}
